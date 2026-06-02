@@ -1,38 +1,872 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jazz Man Mark!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-    </style>
+<!-- saved from url=(0066)file:///C:/Users/marperei/Downloads/jazz_salary_infographic_2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utah Jazz Salary Breakdown · Salt City Hoops</title>
+<link href="./Utah Jazz Salary Breakdown · Salt City Hoops_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --sch-teal:      #00c8aa;
+    --sch-teal-dark: #009e86;
+    --sch-teal-light:#e0faf5;
+    --sch-pink:      #e9007e;
+    --sch-yellow:    #f5c800;
+    --sch-black:     #0e0e0e;
+    --sch-navy:      #1a1a2e;
+    --sch-white:     #ffffff;
+    --sch-offwhite:  #f7f8f8;
+    --sch-gray:      #6b7280;
+    --sch-lgray:     #e5e7eb;
+    --sch-border:    #d1d5db;
+    --sch-text:      #111827;
+    --positive:      #009e86;
+    --negative:      #e9007e;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background: var(--sch-offwhite);
+    color: var(--sch-text);
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ── TOP NAV ── */
+  .top-bar {
+    background: var(--sch-black);
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--sch-teal);
+  }
+
+  .sch-logo {
+    height: 32px;
+  }
+
+  .top-bar-tag {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--sch-teal);
+    border: 1.5px solid var(--sch-teal);
+    padding: 4px 10px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--sch-black);
+    padding: 52px 32px 44px;
+    border-bottom: 4px solid var(--sch-teal);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: 45%;
+    background: repeating-linear-gradient(
+      -52deg,
+      transparent, transparent 20px,
+      rgba(0,200,170,0.045) 20px,
+      rgba(0,200,170,0.045) 40px
+    );
+    pointer-events: none;
+  }
+
+  .hero-inner { max-width: 1080px; margin: 0 auto; position: relative; z-index: 1; }
+
+  .hero-eyebrow {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--sch-teal);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    width: 24px; height: 2px;
+    background: var(--sch-teal);
+    display: block;
+  }
+
+  .hero-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(50px, 8vw, 92px);
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--sch-white);
+    margin-bottom: 14px;
+  }
+
+  .hero-title .outline {
+    color: transparent;
+    -webkit-text-stroke: 2.5px var(--sch-teal);
+    display: block;
+  }
+
+  .hero-title .solid {
+    color: var(--sch-white);
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.45);
+    max-width: 480px;
+    line-height: 1.65;
+  }
+
+  /* ── PAGE ── */
+  .page { max-width: 1080px; margin: 0 auto; padding: 44px 32px 80px; }
+
+  /* ── SECTION HEADERS ── */
+  .section-hdr {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--sch-black);
+  }
+
+  .section-hdr h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sch-black);
+  }
+
+  .section-badge {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--sch-white);
+    background: var(--sch-teal);
+    padding: 3px 8px;
+    border-radius: 2px;
+  }
+
+  /* ── YEAR TABS ── */
+  .year-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    border: 1.5px solid var(--sch-black);
+    width: fit-content;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .year-tab {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    background: var(--sch-white);
+    color: var(--sch-gray);
+    border: none;
+    border-right: 1.5px solid var(--sch-black);
+    cursor: pointer;
+    transition: all 0.12s;
+  }
+  .year-tab:last-child { border-right: none; }
+  .year-tab:hover { background: var(--sch-teal-light); color: var(--sch-teal-dark); }
+  .year-tab.active {
+    background: var(--sch-black);
+    color: var(--sch-teal);
+  }
+
+  /* ── CAP CARDS ── */
+  .cards-section { margin-bottom: 52px; }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+    gap: 10px;
+  }
+
+  .cap-card {
+    background: var(--sch-white);
+    border: 1.5px solid var(--sch-lgray);
+    border-top: 4px solid var(--sch-teal);
+    padding: 16px;
+  }
+  .cap-card.pink-top  { border-top-color: var(--sch-pink); }
+  .cap-card.gray-top  { border-top-color: #bbb; }
+  .cap-card.neg-top   { border-top-color: var(--sch-pink); }
+  .cap-card.pos-top   { border-top-color: var(--positive); }
+  .cap-card.black-top { border-top-color: var(--sch-black); }
+
+  .card-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--sch-gray); margin-bottom: 5px;
+  }
+  .card-value {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px; font-weight: 800;
+    line-height: 1; color: var(--sch-black);
+  }
+  .card-value.teal     { color: var(--sch-teal-dark); }
+  .card-value.pink     { color: var(--sch-pink); }
+  .card-value.positive { color: var(--positive); }
+  .card-value.negative { color: var(--negative); }
+  .card-sub { font-size: 10px; color: var(--sch-gray); margin-top: 4px; }
+
+  /* ── BAR CHART ── */
+  .bar-section { margin-bottom: 52px; }
+
+  .legend {
+    display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 14px;
+  }
+  .legend-item {
+    display: flex; align-items: center; gap: 6px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--sch-gray);
+  }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+  .chart-col-hdrs {
+    display: grid;
+    grid-template-columns: 200px 1fr 90px;
+    gap: 10px; margin-bottom: 6px; padding-bottom: 8px;
+    border-bottom: 1.5px solid var(--sch-black);
+  }
+  .chart-col-hdr {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--sch-gray);
+  }
+  .chart-col-hdr.right { text-align: right; }
+
+  .player-row {
+    display: grid;
+    grid-template-columns: 200px 1fr 90px;
+    gap: 10px; align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--sch-lgray);
+    opacity: 0; animation: fadeIn 0.3s forwards;
+  }
+  @keyframes fadeIn { to { opacity:1; } }
+
+  .player-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--sch-black);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .player-meta {
+    font-size: 10px; font-weight: 600;
+    color: var(--sch-gray); letter-spacing: 0.05em; text-transform: uppercase;
+  }
+
+  .bar-track {
+    position: relative;
+    background: var(--sch-lgray);
+    height: 26px; border-radius: 1px; overflow: visible;
+  }
+  .bar-fill {
+    height: 100%; border-radius: 1px;
+    transition: width 0.5s cubic-bezier(0.16,1,0.3,1);
+  }
+  .cap-marker {
+    position: absolute; top: -5px; bottom: -5px;
+    width: 2px; background: var(--sch-black); opacity: 0.35; z-index: 5;
+  }
+  .cap-marker-label {
+    position: absolute; top: -18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 9px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--sch-black); white-space: nowrap;
+    transform: translateX(-50%); opacity: 0.5;
+  }
+
+  .bar-amount {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px; font-weight: 700;
+    color: var(--sch-black); text-align: right; letter-spacing: 0.03em;
+  }
+
+  /* ── HEATMAP ── */
+  .heatmap-section { margin-bottom: 52px; }
+  .hm-wrap { overflow-x: auto; }
+
+  .hm-table {
+    width: 100%; border-collapse: separate; border-spacing: 3px;
+    min-width: 640px;
+  }
+  .hm-table th {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--sch-gray); background: transparent;
+    padding: 6px 8px; text-align: center;
+    border-bottom: 1.5px solid var(--sch-black);
+  }
+  .hm-table th.name-col { text-align: left; width: 160px; }
+  .hm-table td {
+    padding: 5px 6px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px; font-weight: 700;
+    text-align: center; letter-spacing: 0.02em; border-radius: 2px;
+  }
+  .hm-table td.name-col {
+    text-align: left; font-size: 13px; font-weight: 700;
+    text-transform: uppercase; color: var(--sch-black);
+    letter-spacing: 0.04em; white-space: nowrap;
+  }
+  .hm-cell-empty { color: var(--sch-lgray); background: rgba(0,0,0,0.02) !important; }
+
+  /* ── DEAD SALARY ── */
+  .dead-section {
+    background: var(--sch-white);
+    border: 1.5px solid var(--sch-lgray);
+    border-left: 4px solid #bbb;
+    padding: 20px 24px; margin-bottom: 40px;
+  }
+  .dead-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--sch-gray); margin-bottom: 12px;
+  }
+  .dead-list { display: flex; flex-wrap: wrap; gap: 8px; }
+  .dead-chip {
+    background: var(--sch-offwhite);
+    border: 1.5px solid var(--sch-lgray);
+    padding: 5px 12px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--sch-text);
+    display: flex; gap: 8px; align-items: center;
+  }
+  .dead-chip .chip-amt { font-weight: 700; color: var(--sch-gray); font-size: 11px; }
+  .dead-total-chip {
+    background: var(--sch-black); border-color: var(--sch-black);
+    color: var(--sch-teal);
+  }
+  .dead-total-chip .chip-amt { color: rgba(0,200,170,0.6); }
+
+  /* ── DIVIDER ── */
+  .divider { height: 1px; background: var(--sch-lgray); margin: 44px 0; }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: 40px; padding-top: 20px;
+    border-top: 2px solid var(--sch-black);
+    display: flex; justify-content: space-between;
+    align-items: center; flex-wrap: wrap; gap: 12px;
+  }
+  .footer-logo { height: 22px; }
+  .footer-text { font-size: 11px; color: var(--sch-gray); letter-spacing: 0.05em; }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Jazz Man Mark!</h1>
-        <p>Placeholder!</p>
+
+<!-- TOP NAV -->
+<div class="top-bar">
+  <img class="sch-logo" src="./Utah Jazz Salary Breakdown · Salt City Hoops_files/66f0c5f121988f07549e1bd6_sch-logo-horizontal.svg" alt="Salt City Hoops" style="filter: brightness(0) saturate(100%) invert(72%) sepia(60%) saturate(400%) hue-rotate(127deg) brightness(100%);">
+  <div class="top-bar-tag">Cap Tools</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Utah Jazz · Salary Intelligence</div>
+    <div class="hero-title">
+      <span class="outline">Roster</span>
+      <span class="solid">Finance</span>
     </div>
-</body>
-</html>
+    <p class="hero-sub">Every Jazz salary commitment — current season, future years, and dead cap — through 2030–31.</p>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- YEAR TABS -->
+  <div class="year-tabs" id="yearTabs">
+    <button class="year-tab active" onclick="setYear(&#39;2025-26&#39;)">2025–26</button>
+    <button class="year-tab" onclick="setYear(&#39;2026-27&#39;)">2026–27</button>
+    <button class="year-tab" onclick="setYear(&#39;2027-28&#39;)">2027–28</button>
+    <button class="year-tab" onclick="setYear(&#39;2028-29&#39;)">2028–29</button>
+    <button class="year-tab" onclick="setYear(&#39;2029-30&#39;)">2029–30</button>
+    <button class="year-tab" onclick="setYear(&#39;2030-31&#39;)">2030–31</button>
+  </div>
+
+  <!-- CAP SUMMARY -->
+  <div class="cards-section">
+    <div class="section-hdr">
+      <h2>Cap Summary</h2>
+      <span class="section-badge" id="cardYearBadge">2025–26</span>
+    </div>
+    <div class="cards-grid" id="cardsGrid">
+    <div class="cap-card">
+      <div class="card-label">Salary Cap</div>
+      <div class="card-value teal">$154.6M</div>
+      <div class="card-sub">2025-26 league cap</div>
+    </div>
+    <div class="cap-card black-top">
+      <div class="card-label">Team Salary</div>
+      <div class="card-value">$147.1M</div>
+      <div class="card-sub">15 players</div>
+    </div>
+    <div class="cap-card gray-top">
+      <div class="card-label">Dead Salary</div>
+      <div class="card-value" style="color:#aaa">$26.0M</div>
+      <div class="card-sub">Buyouts &amp; waivers</div>
+    </div>
+    <div class="cap-card black-top">
+      <div class="card-label">Total Charges</div>
+      <div class="card-value">$173.2M</div>
+      <div class="card-sub">112% of cap used</div>
+    </div>
+    <div class="cap-card neg-top">
+      <div class="card-label">Cap Room</div>
+      <div class="card-value negative">-$18.5M</div>
+      <div class="card-sub">Over the cap</div>
+    </div>
+  </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- BAR CHART -->
+  <div class="bar-section">
+    <div class="section-hdr">
+      <h2>Player Salaries</h2>
+      <span class="section-badge" id="barYearBadge">2025–26</span>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#e9007e"></div>$30M+</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f5c800"></div>$10–30M</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#00c8aa"></div>$3–10M</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#bbb"></div>Under $3M</div>
+    </div>
+    <div class="chart-col-hdrs">
+      <div class="chart-col-hdr">Player</div>
+      <div class="chart-col-hdr">Salary vs. Cap</div>
+      <div class="chart-col-hdr right">Amount</div>
+    </div>
+    <div id="barChart"><div class="player-row" style="animation-delay: 0s;">
+      <div>
+        <div class="player-name">Lauri Markkanen</div>
+        <div class="player-meta">PF · Age 29</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:93.75%;background:#e9007e"></div>
+        <div class="cap-marker" style="left:312.5%">
+          <div class="cap-marker-label">Salary Cap</div>
+        </div>
+      </div>
+      <div class="bar-amount">$46.4M</div>
+    </div><div class="player-row" style="animation-delay: 0.035s;">
+      <div>
+        <div class="player-name">Jaren Jackson Jr.</div>
+        <div class="player-meta">PF · Age 26.7</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:70.7255879519163%;background:#e9007e"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$35.0M</div>
+    </div><div class="player-row" style="animation-delay: 0.07s;">
+      <div>
+        <div class="player-name">Jusuf Nurkic</div>
+        <div class="player-meta">C · Age 31.7</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:39.15166475909652%;background:#f5c800"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$19.4M</div>
+    </div><div class="player-row" style="animation-delay: 0.105s;">
+      <div>
+        <div class="player-name">Ace Bailey</div>
+        <div class="player-meta">SF · Age 19.7</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:18.32770761799453%;background:#00c8aa"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$9.1M</div>
+    </div><div class="player-row" style="animation-delay: 0.14s;">
+      <div>
+        <div class="player-name">John Konchar</div>
+        <div class="player-meta">SG · Age 30.1</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:12.457807134958971%;background:#00c8aa"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$6.2M</div>
+    </div><div class="player-row" style="animation-delay: 0.175s;">
+      <div>
+        <div class="player-name">Cody Williams</div>
+        <div class="player-meta">SF · Age 21.5</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:11.604007837203438%;background:#00c8aa"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$5.7M</div>
+    </div><div class="player-row" style="animation-delay: 0.21s;">
+      <div>
+        <div class="player-name">Walker Kessler</div>
+        <div class="player-meta">C · Age 24.8</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:9.859021675169902%;background:#00c8aa"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$4.9M</div>
+    </div><div class="player-row" style="animation-delay: 0.245s;">
+      <div>
+        <div class="player-name">Keyonte George</div>
+        <div class="player-meta">PG · Age 22.5</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:8.64662748064948%;background:#00c8aa"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$4.3M</div>
+    </div><div class="player-row" style="animation-delay: 0.28s;">
+      <div>
+        <div class="player-name">Kevin Love</div>
+        <div class="player-meta">PF · Age 37.7</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:8.386034000012934%;background:#00c8aa"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$4.2M</div>
+    </div><div class="player-row" style="animation-delay: 0.315s;">
+      <div>
+        <div class="player-name">Svi Mykhailiuk</div>
+        <div class="player-meta">SG · Age 28.9</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:7.4261867349512105%;background:#00c8aa"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$3.7M</div>
+    </div><div class="player-row" style="animation-delay: 0.35s;">
+      <div>
+        <div class="player-name">Kyle Filipowski</div>
+        <div class="player-meta">PF · Age 22.5</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:6.062193253021397%;background:#00c8aa"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$3.0M</div>
+    </div><div class="player-row" style="animation-delay: 0.385s;">
+      <div>
+        <div class="player-name">Brice Sensabaugh</div>
+        <div class="player-meta">SG · Age 22.5</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:5.443364565752972%;background:#cccccc"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$2.7M</div>
+    </div><div class="player-row" style="animation-delay: 0.42s;">
+      <div>
+        <div class="player-name">Isaiah Collier</div>
+        <div class="player-meta">PG · Age 21.6</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:5.331092746707017%;background:#cccccc"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$2.6M</div>
+    </div><div class="player-row" style="animation-delay: 0.455s;">
+      <div>
+        <div class="player-name">Bez Mbeng</div>
+        <div class="player-meta">SG · Age 23</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:0.1478225410127581%;background:#cccccc"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$73K</div>
+    </div><div class="player-row" style="animation-delay: 0.49s;">
+      <div>
+        <div class="player-name">Hayden Gray</div>
+        <div class="player-meta">SG · Age 23</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:0.029565316494985353%;background:#cccccc"></div>
+        <div class="cap-marker" style="left:312.5%">
+          
+        </div>
+      </div>
+      <div class="bar-amount">$15K</div>
+    </div></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- HEATMAP -->
+  <div class="heatmap-section">
+    <div class="section-hdr">
+      <h2>Multi-Year Map</h2>
+      <span class="section-badge">All Seasons</span>
+    </div>
+    <div class="hm-wrap">
+      <table class="hm-table" id="heatmapTable"><thead><tr><th class="name-col">Player</th><th>2025-26</th><th>2026-27</th><th>2027-28</th><th>2028-29</th><th>2029-30</th><th>2030-31</th></tr></thead><tbody><tr><td class="name-col">Lauri Markkanen</td><td style="background:rgba(233,0,126,0.12);color:#b5005f;border:1px solid rgba(233,0,126,0.25)" title="Lauri Markkanen · 2025-26 · $46.4M">$46.4M</td><td style="background:rgba(233,0,126,0.12);color:#b5005f;border:1px solid rgba(233,0,126,0.25)" title="Lauri Markkanen · 2026-27 · $46.1M">$46.1M</td><td style="background:rgba(233,0,126,0.12);color:#b5005f;border:1px solid rgba(233,0,126,0.25)" title="Lauri Markkanen · 2027-28 · $49.8M">$49.8M</td><td style="background:rgba(233,0,126,0.12);color:#b5005f;border:1px solid rgba(233,0,126,0.25)" title="Lauri Markkanen · 2028-29 · $53.5M">$53.5M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Jaren Jackson Jr.</td><td style="background:rgba(245,200,0,0.15);color:#7a6200;border:1px solid rgba(245,200,0,0.3)" title="Jaren Jackson Jr. · 2025-26 · $35.0M">$35.0M</td><td style="background:rgba(233,0,126,0.12);color:#b5005f;border:1px solid rgba(233,0,126,0.25)" title="Jaren Jackson Jr. · 2026-27 · $49.0M">$49.0M</td><td style="background:rgba(233,0,126,0.12);color:#b5005f;border:1px solid rgba(233,0,126,0.25)" title="Jaren Jackson Jr. · 2027-28 · $50.5M">$50.5M</td><td style="background:rgba(233,0,126,0.12);color:#b5005f;border:1px solid rgba(233,0,126,0.25)" title="Jaren Jackson Jr. · 2028-29 · $52.0M">$52.0M</td><td style="background:rgba(233,0,126,0.12);color:#b5005f;border:1px solid rgba(233,0,126,0.25)" title="Jaren Jackson Jr. · 2029-30 · $53.5M">$53.5M</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Jusuf Nurkic</td><td style="background:rgba(245,200,0,0.15);color:#7a6200;border:1px solid rgba(245,200,0,0.3)" title="Jusuf Nurkic · 2025-26 · $19.4M">$19.4M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Ace Bailey</td><td style="background:rgba(0,200,170,0.12);color:#007a68;border:1px solid rgba(0,200,170,0.25)" title="Ace Bailey · 2025-26 · $9.1M">$9.1M</td><td style="background:rgba(0,200,170,0.12);color:#007a68;border:1px solid rgba(0,200,170,0.25)" title="Ace Bailey · 2026-27 · $9.5M">$9.5M</td><td style="background:rgba(0,200,170,0.12);color:#007a68;border:1px solid rgba(0,200,170,0.25)" title="Ace Bailey · 2027-28 · $10.0M">$10.0M</td><td style="background:rgba(0,200,170,0.12);color:#007a68;border:1px solid rgba(0,200,170,0.25)" title="Ace Bailey · 2028-29 · $12.6M">$12.6M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">John Konchar</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="John Konchar · 2025-26 · $6.2M">$6.2M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="John Konchar · 2026-27 · $6.2M">$6.2M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Cody Williams</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Cody Williams · 2025-26 · $5.7M">$5.7M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Cody Williams · 2026-27 · $6.0M">$6.0M</td><td style="background:rgba(0,200,170,0.12);color:#007a68;border:1px solid rgba(0,200,170,0.25)" title="Cody Williams · 2027-28 · $7.7M">$7.7M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Walker Kessler</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Walker Kessler · 2025-26 · $4.9M">$4.9M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Keyonte George</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Keyonte George · 2025-26 · $4.3M">$4.3M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Keyonte George · 2026-27 · $6.6M">$6.6M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Kevin Love</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Kevin Love · 2025-26 · $4.2M">$4.2M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Svi Mykhailiuk</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Svi Mykhailiuk · 2025-26 · $3.7M">$3.7M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Svi Mykhailiuk · 2026-27 · $3.9M">$3.9M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Svi Mykhailiuk · 2027-28 · $4.0M">$4.0M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Kyle Filipowski</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Kyle Filipowski · 2025-26 · $3.0M">$3.0M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Kyle Filipowski · 2026-27 · $3.0M">$3.0M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Kyle Filipowski · 2027-28 · $3.0M">$3.0M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Brice Sensabaugh</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Brice Sensabaugh · 2025-26 · $2.7M">$2.7M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Brice Sensabaugh · 2026-27 · $4.9M">$4.9M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Isaiah Collier</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Isaiah Collier · 2025-26 · $2.6M">$2.6M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Isaiah Collier · 2026-27 · $2.8M">$2.8M</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Isaiah Collier · 2027-28 · $5.0M">$5.0M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Bez Mbeng</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Bez Mbeng · 2025-26 · $73K">$73K</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Bez Mbeng · 2026-27 · $2.2M">$2.2M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">Hayden Gray</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Hayden Gray · 2025-26 · $15K">$15K</td><td style="background:rgba(0,0,0,0.04);color:#6b7280;border:1px solid rgba(0,0,0,0.08)" title="Hayden Gray · 2026-27 · $2.2M">$2.2M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr><tr><td class="name-col">2026 #2 Pick</td><td class="hm-cell-empty">—</td><td style="background:rgba(0,200,170,0.12);color:#007a68;border:1px solid rgba(0,200,170,0.25)" title="2026 #2 Pick · 2026-27 · $13.2M">$13.2M</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td><td class="hm-cell-empty">—</td></tr></tbody></table>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- DEAD SALARY -->
+  <div class="dead-section">
+    <div class="dead-title">Dead Salary Charges · 2025–26 Only</div>
+    <div class="dead-list" id="deadList"><div class="dead-chip">Jordan Clarkson<span class="chip-amt">$10.7M</span></div><div class="dead-chip">Lonzo Ball<span class="chip-amt">$10.0M</span></div><div class="dead-chip">Vince Williams Jr.<span class="chip-amt">$2.3M</span></div><div class="dead-chip">Chris Boucher<span class="chip-amt">$2.3M</span></div><div class="dead-chip">Mo Bamba (×2)<span class="chip-amt">$264K</span></div><div class="dead-chip">Andersson Garcia<span class="chip-amt">$132K</span></div><div class="dead-chip">Kennedy Chandler (×2)<span class="chip-amt">$235K</span></div><div class="dead-chip">Bez Mbeng ×2 (dead)<span class="chip-amt">$146K</span></div><div class="dead-chip dead-total-chip">Total Dead Cap<span class="chip-amt">$26.0M</span></div></div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <img class="footer-logo" src="./Utah Jazz Salary Breakdown · Salt City Hoops_files/66f8c35ab96e685709c346c6_SCH b&amp;w.svg" alt="SCH">
+    <div class="footer-text">saltcityhoops.com · All figures USD · Not affiliated with Utah Jazz or NBA</div>
+  </div>
+
+</div>
+
+<script>
+const YEARS=['2025-26','2026-27','2027-28','2028-29','2029-30','2030-31'];
+const SALARY_CAP={'2025-26':154647000,'2026-27':165000000,'2027-28':176550000,'2028-29':188908500,'2029-30':202132095,'2030-31':216281342};
+const PLAYERS=[
+  {name:'Lauri Markkanen',  pos:'PF',age:29.0,salaries:{'2025-26':46394100,'2026-27':46113154,'2027-28':49824681,'2028-29':53536209}},
+  {name:'Jaren Jackson Jr.',pos:'PF',age:26.7,salaries:{'2025-26':35000000,'2026-27':49000000,'2027-28':50500000,'2028-29':52000000,'2029-30':53500000}},
+  {name:'Jusuf Nurkic',     pos:'C', age:31.7,salaries:{'2025-26':19375000}},
+  {name:'Ace Bailey',       pos:'SF',age:19.7,salaries:{'2025-26':9069840,'2026-27':9523080,'2027-28':9976560,'2028-29':12640302}},
+  {name:'2026 #2 Pick',     pos:'—', age:null, salaries:{'2026-27':13198464}},
+  {name:'John Konchar',     pos:'SG',age:30.1,salaries:{'2025-26':6165000,'2026-27':6165000}},
+  {name:'Cody Williams',    pos:'SF',age:21.5,salaries:{'2025-26':5742480,'2026-27':6015600,'2027-28':7669890}},
+  {name:'Walker Kessler',   pos:'C', age:24.8,salaries:{'2025-26':4878938}},
+  {name:'Keyonte George',   pos:'PG',age:22.5,salaries:{'2025-26':4278960,'2026-27':6563925}},
+  {name:'Kevin Love',       pos:'PF',age:37.7,salaries:{'2025-26':4150000}},
+  {name:'Svi Mykhailiuk',   pos:'SG',age:28.9,salaries:{'2025-26':3675000,'2026-27':3850000,'2027-28':4025000}},
+  {name:'Kyle Filipowski',  pos:'PF',age:22.5,salaries:{'2025-26':3000000,'2026-27':3000000,'2027-28':3000000}},
+  {name:'Brice Sensabaugh', pos:'SG',age:22.5,salaries:{'2025-26':2693760,'2026-27':4862237}},
+  {name:'Isaiah Collier',   pos:'PG',age:21.6,salaries:{'2025-26':2638200,'2026-27':2763960,'2027-28':4988948}},
+  {name:'Bez Mbeng',        pos:'SG',age:23.0,salaries:{'2025-26':73153,'2026-27':2150918}},
+  {name:'Hayden Gray',      pos:'SG',age:23.0,salaries:{'2025-26':14631,'2026-27':2150918}},
+];
+const DEAD_SALARY=[
+  {name:'Jordan Clarkson',amount:10651561},
+  {name:'Lonzo Ball',amount:10000000},
+  {name:'Vince Williams Jr.',amount:2301587},
+  {name:'Chris Boucher',amount:2296274},
+  {name:'Mo Bamba (×2)',amount:263940},
+  {name:'Andersson Garcia',amount:131970},
+  {name:'Kennedy Chandler (×2)',amount:235460},
+  {name:'Bez Mbeng ×2 (dead)',amount:146306},
+];
+const DEAD_TOTAL=DEAD_SALARY.reduce((s,d)=>s+d.amount,0);
+
+function fmt(n){
+  if(!n&&n!==0)return'—';
+  const abs=Math.abs(n),sign=n<0?'-':'';
+  if(abs>=1e6)return sign+'$'+(abs/1e6).toFixed(1)+'M';
+  if(abs>=1000)return sign+'$'+Math.round(abs/1000)+'K';
+  return'$'+n.toLocaleString();
+}
+function barColor(n){
+  if(n>=30e6)return'#e9007e';
+  if(n>=10e6)return'#f5c800';
+  if(n>=3e6) return'#00c8aa';
+  return'#cccccc';
+}
+function hmStyle(n,cap){
+  if(!n)return null;
+  const p=n/cap;
+  if(p>=0.25)return{bg:'rgba(233,0,126,0.12)',text:'#b5005f',border:'rgba(233,0,126,0.25)'};
+  if(p>=0.12)return{bg:'rgba(245,200,0,0.15)',text:'#7a6200',border:'rgba(245,200,0,0.3)'};
+  if(p>=0.04)return{bg:'rgba(0,200,170,0.12)',text:'#007a68',border:'rgba(0,200,170,0.25)'};
+  return{bg:'rgba(0,0,0,0.04)',text:'#6b7280',border:'rgba(0,0,0,0.08)'};
+}
+
+let currentYear='2025-26';
+
+function setYear(yr){
+  currentYear=yr;
+  document.querySelectorAll('.year-tab').forEach(t=>{
+    t.classList.toggle('active',t.textContent.trim().replace('–','-')===yr);
+  });
+  document.getElementById('cardYearBadge').textContent=yr;
+  document.getElementById('barYearBadge').textContent=yr;
+  renderCards(); renderBars();
+}
+
+function renderCards(){
+  const yr=currentYear,cap=SALARY_CAP[yr];
+  const teamSal=PLAYERS.reduce((s,p)=>s+(p.salaries[yr]||0),0);
+  const dead=yr==='2025-26'?DEAD_TOTAL:0;
+  const total=teamSal+dead;
+  const room=cap-total;
+  const pct=Math.round((total/cap)*100);
+  const count=PLAYERS.filter(p=>p.salaries[yr]).length;
+  document.getElementById('cardsGrid').innerHTML=`
+    <div class="cap-card">
+      <div class="card-label">Salary Cap</div>
+      <div class="card-value teal">${fmt(cap)}</div>
+      <div class="card-sub">${yr} league cap</div>
+    </div>
+    <div class="cap-card black-top">
+      <div class="card-label">Team Salary</div>
+      <div class="card-value">${fmt(teamSal)}</div>
+      <div class="card-sub">${count} players</div>
+    </div>
+    <div class="cap-card gray-top">
+      <div class="card-label">Dead Salary</div>
+      <div class="card-value" style="color:#aaa">${dead>0?fmt(dead):'—'}</div>
+      <div class="card-sub">${dead>0?'Buyouts & waivers':'No dead salary'}</div>
+    </div>
+    <div class="cap-card black-top">
+      <div class="card-label">Total Charges</div>
+      <div class="card-value">${fmt(total)}</div>
+      <div class="card-sub">${pct}% of cap used</div>
+    </div>
+    <div class="cap-card ${room>=0?'pos-top':'neg-top'}">
+      <div class="card-label">Cap Room</div>
+      <div class="card-value ${room>=0?'positive':'negative'}">${room>=0?'+':''}${fmt(room)}</div>
+      <div class="card-sub">${room>=0?'Under the cap':'Over the cap'}</div>
+    </div>
+  `;
+}
+
+function renderBars(){
+  const yr=currentYear,cap=SALARY_CAP[yr];
+  const active=PLAYERS.filter(p=>p.salaries[yr]).sort((a,b)=>(b.salaries[yr]||0)-(a.salaries[yr]||0));
+  const maxSal=Math.max(...active.map(p=>p.salaries[yr]||0),cap*0.32);
+  const capPct=(cap/maxSal)*100;
+  const container=document.getElementById('barChart');
+  container.innerHTML='';
+  if(!active.length){
+    container.innerHTML='<div style="padding:20px 0;color:var(--sch-gray)">No player salaries on record for this season.</div>';
+    return;
+  }
+  active.forEach((p,i)=>{
+    const sal=p.salaries[yr];
+    const barPct=(sal/maxSal)*100;
+    const row=document.createElement('div');
+    row.className='player-row';
+    row.style.animationDelay=(i*0.035)+'s';
+    row.innerHTML=`
+      <div>
+        <div class="player-name">${p.name}</div>
+        <div class="player-meta">${p.pos}${p.age?' · Age '+p.age:''}</div>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:${barPct}%;background:${barColor(sal)}"></div>
+        <div class="cap-marker" style="left:${capPct}%">
+          ${i===0?'<div class="cap-marker-label">Salary Cap</div>':''}
+        </div>
+      </div>
+      <div class="bar-amount">${fmt(sal)}</div>
+    `;
+    container.appendChild(row);
+  });
+}
+
+function renderHeatmap(){
+  const table=document.getElementById('heatmapTable');
+  let html='<thead><tr><th class="name-col">Player</th>';
+  YEARS.forEach(yr=>{html+=`<th>${yr}</th>`;});
+  html+='</tr></thead><tbody>';
+  [...PLAYERS].sort((a,b)=>(b.salaries['2025-26']||0)-(a.salaries['2025-26']||0)).forEach(p=>{
+    html+=`<tr><td class="name-col">${p.name}</td>`;
+    YEARS.forEach(yr=>{
+      const sal=p.salaries[yr],cap=SALARY_CAP[yr];
+      if(sal){
+        const c=hmStyle(sal,cap);
+        html+=`<td style="background:${c.bg};color:${c.text};border:1px solid ${c.border}" title="${p.name} · ${yr} · ${fmt(sal)}">${fmt(sal)}</td>`;
+      } else {
+        html+=`<td class="hm-cell-empty">—</td>`;
+      }
+    });
+    html+='</tr>';
+  });
+  table.innerHTML+=html+'</tbody>';
+}
+
+function renderDead(){
+  const container=document.getElementById('deadList');
+  DEAD_SALARY.forEach(d=>{
+    const chip=document.createElement('div');
+    chip.className='dead-chip';
+    chip.innerHTML=`${d.name}<span class="chip-amt">${fmt(d.amount)}</span>`;
+    container.appendChild(chip);
+  });
+  const tot=document.createElement('div');
+  tot.className='dead-chip dead-total-chip';
+  tot.innerHTML=`Total Dead Cap<span class="chip-amt">${fmt(DEAD_TOTAL)}</span>`;
+  container.appendChild(tot);
+}
+
+renderCards(); renderBars(); renderHeatmap(); renderDead();
+</script>
+
+
+</body></html>
