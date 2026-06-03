@@ -853,6 +853,7 @@ function renderHeatmap(){
 
 function renderDead(){
   const container=document.getElementById('deadList');
+  container.innerHTML='';
   DEAD_SALARY.forEach(d=>{
     const chip=document.createElement('div');
     chip.className='dead-chip';
